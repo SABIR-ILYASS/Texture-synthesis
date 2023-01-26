@@ -71,7 +71,22 @@ class MainWindow(QMainWindow):
         self.btnInput.setGeometry(0, 0, 700, 150)
         self.btnInput.mousePressEvent = importingImage
 
-    def imageWidget(self, url):
+    def imageWidget1(self, url):
+        self.pixmap = QPixmap(url)
+        self.labelImage.setPixmap(self.pixmap)
+        self.labelImage.setGeometry(25, 220, 640, 640)
+    
+    def imageWidget2(self, url):
+        self.pixmap = QPixmap(url)
+        self.labelImage.setPixmap(self.pixmap)
+        self.labelImage.setGeometry(25, 220, 640, 640)
+
+    def imageWidget3(self, url):
+        self.pixmap = QPixmap(url)
+        self.labelImage.setPixmap(self.pixmap)
+        self.labelImage.setGeometry(25, 220, 640, 640)
+
+    def imageWidget4(self, url):
         self.pixmap = QPixmap(url)
         self.labelImage.setPixmap(self.pixmap)
         self.labelImage.setGeometry(25, 220, 640, 640)
